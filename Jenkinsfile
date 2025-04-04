@@ -14,7 +14,7 @@ pipeline{
         stage('Build Docker Image') {
             steps {
                 script {
-                    bat 'docker build -t ajusha/contactmanager .'
+                    bat 'docker build -t gobikrishna7890/docker_demo:latest .'
                 }
             }
         }
