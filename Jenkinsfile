@@ -24,7 +24,7 @@ pipeline{
                     withCredentials([usernamePassword(credentialsId: 'DOCKER_HUB', passwordVariable: 'Dockerpass', usernameVariable: 'DockerUser')]) {
                        bat 'echo %Dockerpass% | docker login -u %DockerUser% --password-stdin'
                     }
-                    bat 'docker push ajusha/contactmanager'
+                    bat 'docker push gobikrishna7890/docker_demo:latest'
                 }
             }
         }
